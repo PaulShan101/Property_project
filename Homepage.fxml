@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.HomepageController">
+   <children>
+      <Label layoutX="180.0" layoutY="130.0" minHeight="-Infinity" minWidth="-Infinity" text="HOMEPAGE" textFill="#f2eeee">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <HBox alignment="TOP_CENTER" layoutX="168.0" layoutY="250.0" prefHeight="100.0" prefWidth="276.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleAdminBtn" style="-fx-background-color: yellow; -fx-border-color: black;" text="Admin" />
+            <Button mnemonicParsing="false" onAction="#handleAgentBtn" style="-fx-background-color: yellow; -fx-border-color: black;" text="Agent" />
+            <Button mnemonicParsing="false" onAction="#handleViewBtn" style="-fx-background-color: yellow; -fx-border-color: black;" text="View All" />
+            <Button mnemonicParsing="false" onAction="#handleHomeBtn" style="-fx-background-color: yellow; -fx-border-color: black;" text="Home" />
+         </children></HBox>
+      <Label layoutX="185.0" layoutY="29.0" style="-fx-background-color: BLACK;" text="PROPERTIES.IE" textFill="#f8f8f8">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

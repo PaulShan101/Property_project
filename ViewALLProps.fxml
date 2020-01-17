@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Properties.ViewAllPropsController">
+   <children>
+      <HBox alignment="TOP_CENTER" layoutX="-1.0" layoutY="25.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="549.0" spacing="15.0" AnchorPane.leftAnchor="15.0">
+         <children>
+            <ComboBox fx:id="areaId" onAction="#getLocation" prefHeight="25.0" prefWidth="101.0" promptText="Area" />
+            <ComboBox fx:id="priceId" onAction="#getHousePrice" prefHeight="25.0" prefWidth="103.0" promptText="Price" />
+            <ComboBox fx:id="bedroomId" minHeight="-Infinity" minWidth="-Infinity" onAction="#getRooms" prefHeight="25.0" prefWidth="112.0" promptText="Bedrooms" />
+            <ComboBox fx:id="typeId" minHeight="-Infinity" minWidth="-Infinity" onAction="#getType" prefHeight="25.0" prefWidth="112.0" promptText="Type" style="-fx-cursor: black;" />
+         </children>
+      </HBox>
+      <ListView fx:id="lstAllProperty" layoutX="48.0" layoutY="132.0" prefHeight="200.0" prefWidth="483.0" />
+      <Button layoutX="264.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleHomeBtn" text="Home" />
+   </children>
+</AnchorPane>

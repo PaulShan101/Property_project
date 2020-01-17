@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onDragDetected="#handleLoginBtn" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.AgentLoginController">
+   <children>
+      <Button layoutX="228.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleLoginBtn" style="-fx-background-color: GREEN;" text="Login" textFill="#f8f6f6" />
+
+      <Label layoutX="55.0" layoutY="21.0" text="Agent Login">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="102.0" text="Enter Username" />
+      <Label layoutX="55.0" layoutY="165.0" text="Enter Password" />
+      <TextField fx:id="username" layoutX="171.0" layoutY="98.0" promptText="Username" style="-fx-background-color: YELLOW;" />
+      <PasswordField fx:id="password" layoutX="171.0" layoutY="161.0" promptText="Password" style="-fx-background-color: YELLOW;" />
+      <TextArea fx:id="txtAreaFeedback" layoutX="12.0" layoutY="221.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="85.0" prefWidth="200.0" />
+      <Button layoutX="228.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleHomeBtn" style="-fx-background-color: GREEN;" text="Home" textFill="#f2eeee" />
+      <ImageView fitHeight="210.0" fitWidth="200.0" layoutX="365.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../default.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

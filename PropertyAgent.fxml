@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PropertyAgents.PropertyAgentController">
+   <children>
+      <TextField fx:id="txtName" layoutX="246.0" layoutY="45.0" />
+      <TextField fx:id="txtPhone" layoutX="246.0" layoutY="88.0" />
+      <Label layoutX="94.0" layoutY="49.0" text="Agent Name" />
+      <Label layoutX="94.0" layoutY="92.0" text="Agent Phone number" />
+      <HBox layoutX="99.0" layoutY="135.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="368.0" spacing="4.0">
+         <children>
+
+             <Button fx:id="create" mnemonicParsing="false" onAction="#handleAddBtn" style="-fx-background-color: YELLOW;" text="Create" />
+
+             <Button fx:id="read" mnemonicParsing="false" onAction="#handleReadBtn" style="-fx-background-color: YELLOW;" text="Read" />
+            <Button fx:id="update" mnemonicParsing="false" onAction="#handleUpdateBtn" style="-fx-background-color: YELLOW;" text="Update" />
+            <Button mnemonicParsing="false" onAction="#handleDeleteBtn" style="-fx-background-color: YELLOW;" text="Delete" />
+            <Button mnemonicParsing="false" onAction="#handleHomeBtn" style="-fx-background-color: YELLOW;" text="Home" />
+            <Button fx:id="save" mnemonicParsing="false" onAction="#handleSaveBtn" style="-fx-background-color: YELLOW;" text="Save" />
+            <Button fx:id="load" mnemonicParsing="false" onAction="#handleLoadBtn" style="-fx-background-color: YELLOW;" text="Load" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+      <TextArea fx:id="txtAreaAgent" layoutX="427.0" layoutY="51.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="114.0" promptText="txtAreaAgent" />
+      <Label layoutX="211.0" layoutY="8.0" style="-fx-background-color: BLACK;" text="PROPERTY AGENT" textFill="#fcfafa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNameUpdate" layoutX="99.0" layoutY="491.0" prefHeight="26.0" prefWidth="149.0" promptText="Name" />
+      <Button layoutX="467.0" layoutY="491.0" mnemonicParsing="false" onAction="#applyChanges" text="Apply Changes" />
+      <TableView fx:id="tableView" layoutX="93.0" layoutY="210.0" prefHeight="248.0" prefWidth="375.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="phone" prefWidth="102.19998168945312" text="Phone Number" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

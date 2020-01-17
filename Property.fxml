@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Properties.PropertyController">
+   <children>
+      <TextField fx:id="PropertyId" layoutX="324.0" layoutY="33.0" />
+      <TextField fx:id="Description" layoutX="324.0" layoutY="67.0" />
+      <TextField fx:id="Address" layoutX="324.0" layoutY="101.0" />
+      <TextField fx:id="ber" layoutX="324.0" layoutY="134.0" />
+      <TextField fx:id="eircode" layoutX="324.0" layoutY="168.0" />
+      <TextField fx:id="areaId" layoutX="324.0" layoutY="201.0" />
+      <TextField fx:id="priceId" layoutX="324.0" layoutY="235.0" />
+      <TextField fx:id="bedroomId" layoutX="324.0" layoutY="268.0" />
+      <TextField fx:id="typeId" layoutX="324.0" layoutY="300.0" />
+      <TableView layoutX="128.0" layoutY="379.0" prefHeight="206.0" prefWidth="392.0">
+        <columns>
+          <TableColumn prefWidth="128.20001220703125" text="C1" />
+          <TableColumn prefWidth="122.4000244140625" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="save" layoutX="243.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleSaveBtn" text="Save" />
+      <Button fx:id="load" layoutX="292.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleLoadBtn" text="Load" />
+      <Button fx:id="create" layoutX="128.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleAddBtn" text="Create" />
+      <Button fx:id="read" layoutX="192.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleReadBtn" text="Read" />
+      <Button fx:id="update" layoutX="409.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleUpdateBtn" text="Update" />
+      <Label layoutX="194.0" layoutY="37.0" text="Property ID" textFill="#f8f4f4" />
+      <Label layoutX="194.0" layoutY="71.0" text="Description" textFill="#f8f4f4" />
+      <Label layoutX="194.0" layoutY="105.0" text="Address" textFill="#fdf7f7" />
+      <Label layoutX="194.0" layoutY="138.0" text="BER" textFill="#edecec" />
+      <Label layoutX="194.0" layoutY="172.0" text="Eircode" textFill="#fdfcfc" />
+      <Label layoutX="194.0" layoutY="205.0" text="Area" textFill="#f8f4f4" />
+      <Label layoutX="194.0" layoutY="239.0" text="Price" textFill="#fdfbfb" />
+      <Label layoutX="194.0" layoutY="272.0" text="Bedroom" textFill="#f8f5f5" />
+      <Label layoutX="194.0" layoutY="304.0" text="Type" textFill="#f2f0f0" />
+      <Button layoutX="473.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleHomeBtn" text="Home" />
+      <Button layoutX="347.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleDeleteBtn" text="Delete" />
+   </children>
+</AnchorPane>
